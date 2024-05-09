@@ -36,12 +36,14 @@ public class ContaTerminal {
         System.out.println("Qual valor do seu primeiro depósito?");
 
         double deposito = teclado.nextDouble();
-        saldo = saldo + deposito;
-
-        
+        saldo = saldo + deposito;       
 
         System.out.println("---------------------------------------");
-        System.out.println("Olá " + nomeCompletoCliente + ", obrigado por criar uma conta em nosso banco, \nsua agência é " + agencia + "\n, conta " + conta + "\n e seu saldo de " + saldo + " já está disponível para saque");
+        System.out.println("Olá " + nomeCompletoCliente + ",\nObrigado por criar uma conta em nosso banco, \nSua agência é: " + 
+                           agencia + "\nConta :" + conta + 
+                           "\nSeu saldo de " + saldo + 
+                           "\njá está disponível para saque.");
+        System.out.println("---------------------------------------");
 
 
         teclado.close();       
